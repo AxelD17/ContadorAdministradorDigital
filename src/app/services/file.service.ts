@@ -36,6 +36,9 @@ export class FileService {
     if (ruta===3) {
       plug = 'ImportExcelGasto'
     }
+    if (ruta===4) {
+      plug = 'ImportExcelActivo'
+    }
     return this.http.post(this.url + plug, archivo);
   }
 }
